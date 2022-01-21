@@ -15,6 +15,15 @@
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
 
+## Tests
+
+* Describe: robogerOutput()
+
+  Test: "if input is 0, it should return 0"
+  Code: robogerOutput(0);
+  Expected Result: "0"
+
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
