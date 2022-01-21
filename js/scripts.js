@@ -3,7 +3,7 @@ function robogerOutput(input)  {
 
   outputArr = new Array(0)
 
-  for( let i = 0; i < input.length ; i++ )  {
+  for( let i = 0; i < input ; i++ )  {
     if (input.toString().includes(3))  {
       outputArr.unshift("Won't you be my neighbor?");
     }
