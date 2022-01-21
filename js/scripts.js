@@ -1,14 +1,14 @@
 function robogerOutput(input)  {
 
   output = new Array(0)
-  if (input === 3)  {
-    output.push("Won't you be my neighbor?");
+  if (input.toString().includes(3))  {
+    output.push("Won't you be my neighborxxxx?");
   }
-  else if (input === 2) {
-    output.push("Boop!");
+  else if (input.toString().includes(2)) {
+    output.push("Boopxxxxx!");
   }
-  else if (input === 1) {
-    output.push("Beep!");
+  else if (input.toString().includes(1)) {
+    output.push("Beepxxxx!");
   }
   else {
     output.push(input);
@@ -16,8 +16,6 @@ function robogerOutput(input)  {
 
   return output;
 }
-
-
 
 $(document).ready(function() {
 

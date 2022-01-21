@@ -23,15 +23,15 @@ Describe: robogerOutput()
   Code: robogerOutput(0);  
   Expected Result: "0"  
 
-* Test: "if input is 1, it should return 'Beep!'"
+* Test: "if input is 1, it should return exception statement 'Beep!'"
   Code: robogerOutput(1);  
   Expected Result: "Beep!"
 
-* Test: "if input is 2, it should return 'Boop!'"  
+* Test: "if input is 2, it should return exception statement 'Boop!'"  
   Code: robogerOutput(2);
   Expected Result: "Boop!";
 
-* Test: "if input is 3, it should return 'Wont you be my neighbor?'"  
+* Test: "if input is 3, it should return exception statement 'Wont you be my neighbor?'"  
   Code: robogerOutput(3);   
   Expected Result: "Won't you be my neighbor?"
 
@@ -39,13 +39,13 @@ Describe: robogerOutput()
   Code: robogerOutput(4);   
   Expected Result: "4"   
 
-* Test: ""   
-  Code: robogerOutput();   
-  Expected Result: ""   
+* Test: "code should only output one exception statement per number"   
+  Code: robogerOutput(2);   
+  Expected Result: "Boop"   
 
-* Test: ""   
-  Code: robogerOutput();   
-  Expected Result: ""   
+* Test: "if input is multi-digit and contains at least 1 exception number, code should output one exception with order of preference, highest to lowest, being: 3,2,1"   
+  Code: robogerOutput(123);   
+  Expected Result: "Won't you be my neighbor?"   
 
 * Test: ""   
   Code: robogerOutput();   
