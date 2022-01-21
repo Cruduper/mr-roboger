@@ -1,23 +1,20 @@
 function robogerOutput(input)  {
 
-
+  output = new Array(0)
   if (input === 1)  {
-    return "Beep!";
+    output.push("Beep!");
   }
   else if (input === 2) {
-    return "Boop!";
+    output.push("Boop!");
   }
   else if (input === 3) {
-    return "Won't you be my neighbor?"
+    output.push("Won't you be my neighbor?");
   }
   else {
-    return 0;
+    output.push(input);
   }
 
- 
-  
-
-  
+  return output;
 }
 
 
