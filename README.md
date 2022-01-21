@@ -23,7 +23,9 @@ Describe: robogerOutput()
   Code: robogerOutput(0);  
   Expected Result: "0"  
 
-* 
+* Test: "if input is 1, it should return 'Beep!'"
+  Code: robogerOutput(1);  
+  Expected Result: "Beep!"
 
 
 ## Setup/Installation Requirements
