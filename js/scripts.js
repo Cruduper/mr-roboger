@@ -1,6 +1,5 @@
 function robogerOutput(input)  {
 
-
   outputArr = new Array(0)
 
   for( let i = 0; i < input ; i++ )  {
@@ -20,8 +19,21 @@ function robogerOutput(input)  {
   return outputArr;
 }
 
+ function printOutput ( userNums ) {
+    for ( i = 0; i < userNums.length; i++ ) {
+      ("div#userResults").text(userNums[i]);
+      ("div#userResults").text("<br>");
+    }
+  }
+
+
 $(document).ready(function() {
+  $("form#formBox").submit( function(event)  {
 
+    event.preventDefault(); 
+    const userNum = parseInt( $("input#userNum").val() );
+    const outputNums = robogerOutput(userNum);
+    printOutput(outputNums);
 
-
+  });
 });
