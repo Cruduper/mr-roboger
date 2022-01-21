@@ -35,52 +35,52 @@ Describe: robogerOutput()
   Code: robogerOutput(3);   
   Expected Result: "Won't you be my neighbor?"
 
+* Test: "if input is any single digit number that isn't 1,2, or 3 should return itself"   
+  Code: robogerOutput(4);   
+  Expected Result: "4"   
+
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 * Test: ""   
-  Code: robogerOuptu();   
-  Expected Result: ""   
-
-* Test: ""   
-  Code: robogerOuptu();   
+  Code: robogerOutput();   
   Expected Result: ""   
 
 
