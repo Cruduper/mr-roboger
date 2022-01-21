@@ -48,14 +48,12 @@ Describe: robogerOutput()
   Expected Result: "Won't you be my neighbor?"   
 
 * Test: "loops through code as many times as the input number, adding the same result to output array that many times "   
-  Code: 
-  const numArray = {1}
-  robogerOutput(2);   
+  Code: robogerOutput(2);   
   Expected Result: "['Boop!', 'Boop!']"   
 
-* Test: ""   
-  Code: robogerOutput();   
-  Expected Result: ""   
+* Test: "Loop should add go through all numbers from input number to 0, adding results from each number to output array"   
+  Code: robogerOutput(5);   
+  Expected Result: ""0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5"   
 
 * Test: ""   
   Code: robogerOutput();   

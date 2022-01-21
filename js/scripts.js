@@ -4,17 +4,17 @@ function robogerOutput(input)  {
   outputArr = new Array(0)
 
   for( let i = 0; i < input ; i++ )  {
-    if (input.toString().includes(3))  {
+    if ((input - i).toString().includes(3))  {
       outputArr.unshift("Won't you be my neighbor?");
     }
-    else if (input.toString().includes(2)) {
+    else if ((input - i).toString().includes(2)) {
       outputArr.unshift("Boop!");
     }
-    else if (input.toString().includes(1)) {
+    else if ((input - i).toString().includes(1)) {
       outputArr.unshift("Beep!");
     }
     else {
-      outputArr.unshift(input);
+      outputArr.unshift(input - i);
     }
   }
   return outputArr;
