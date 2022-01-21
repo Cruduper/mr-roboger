@@ -17,11 +17,13 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Tests
 
-* Describe: robogerOutput()
+Describe: robogerOutput()
 
-  Test: "if input is 0, it should return 0"
-  Code: robogerOutput(0);
-  Expected Result: "0"
+* Test: "if input is 0, it should return 0"  
+  Code: robogerOutput(0);  
+  Expected Result: "0"  
+
+* 
 
 
 ## Setup/Installation Requirements

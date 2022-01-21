@@ -1,5 +1,5 @@
-function robogerOutput()  {
-  
+function robogerOutput(input)  {
+  return 0
 }
 
 
