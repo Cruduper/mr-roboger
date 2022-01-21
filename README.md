@@ -47,9 +47,11 @@ Describe: robogerOutput()
   Code: robogerOutput(123);   
   Expected Result: "Won't you be my neighbor?"   
 
-* Test: ""   
-  Code: robogerOutput();   
-  Expected Result: ""   
+* Test: "loops through code as many times as the input number, adding the same result to output array that many times "   
+  Code: 
+  const numArray = {1}
+  robogerOutput(2);   
+  Expected Result: "['Boop!', 'Boop!']"   
 
 * Test: ""   
   Code: robogerOutput();   
