@@ -1,22 +1,23 @@
 function robogerOutput(input)  {
 
-  output = new Array(0)
 
-  for(int i ; i=  ;i++)  {
+  outputArr = new Array(0)
+
+  for( let i = 0; i < input.length ; i++ )  {
     if (input.toString().includes(3))  {
-      output.push("Won't you be my neighborxxxx?");
+      outputArr.unshift("Won't you be my neighbor?");
     }
     else if (input.toString().includes(2)) {
-      output.push("Boopxxxxx!");
+      outputArr.unshift("Boop!");
     }
     else if (input.toString().includes(1)) {
-      output.push("Beepxxxx!");
+      outputArr.unshift("Beep!");
     }
     else {
-      output.push(input);
+      outputArr.unshift(input);
     }
   }
-  return output;
+  return outputArr;
 }
 
 $(document).ready(function() {
