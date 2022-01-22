@@ -31,9 +31,10 @@ $(document).ready( function() {
   $("div#formBox").submit( function()  {
 
     event.preventDefault(); 
+    $("div#userResults").text("");
     const userNum =  $("input#userNum").val();
     const outputNums = robogerOutput(userNum);
     printOutput(outputNums);
-    console.log(userNum);
+
   });
 });
