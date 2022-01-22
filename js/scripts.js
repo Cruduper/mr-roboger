@@ -18,22 +18,22 @@ function robogerOutput(input)  {
   }
   return outputArr;
 }
-/*
+
  function printOutput ( userNums ) {
     for ( i = 0; i < userNums.length; i++ ) {
-      ("div#userResults").text(userNums[i]);
-      ("div#userResults").text("<br>");
+      $("div#userResults").append(userNums[i]);
+      $("div#userResults").append("<br>");
     }
   }
-*/
+
 
 $(document).ready( function() {
   $("div#formBox").submit( function()  {
 
     event.preventDefault(); 
     const userNum =  $("input#userNum").val();
-    //const outputNums = robogerOutput(userNum);
-    //printOutput(outputNums);
+    const outputNums = robogerOutput(userNum);
+    printOutput(outputNums);
     console.log(userNum);
   });
 });
