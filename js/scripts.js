@@ -16,15 +16,18 @@ function robogerOutput(input)  {
       outputArr.unshift(input - i);
     }
   }
+
+  outputArr.unshift(0);
+  
   return outputArr;
 }
 
- function printOutput ( userNums ) {
-    for ( i = 0; i < userNums.length; i++ ) {
-      $("div#userResults").append(userNums[i]);
-      $("div#userResults").append("<br>");
-    }
+function printOutput ( userNums ) {
+  for ( i = -1; i <= userNums.length; i++ ) {
+    $("div#userResults").append(userNums[i]);
+    $("div#userResults").append("<br>");
   }
+}
 
 
 $(document).ready( function() {
@@ -35,6 +38,5 @@ $(document).ready( function() {
     const userNum =  $("input#userNum").val();
     const outputNums = robogerOutput(userNum);
     printOutput(outputNums);
-
   });
 });
