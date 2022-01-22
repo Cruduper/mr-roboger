@@ -4,3 +4,14 @@
   min-width: 25%;
   text-align: center;
 }
+
+#userResults  {
+  margin: 5%;
+  min-width: 33%;
+  font-weight: 666;
+  color: #911;
+}
+
+body  {
+  background-color: #fcc;
+}
