@@ -1,8 +1,9 @@
 # _Mr Roboger_
-
 #### By _**Eric Crudup**_
 
+
 #### _This program takes an integer from the user, and outputs all numbers from the input number to zero, except when the number contains a 1, 2, or 3, in which case it outputs an exception message_
+
 
 ## Technologies Used
 
@@ -63,7 +64,8 @@ Describe: robogerOutput()
 
 ## Known Bugs
 
-* No exception handling for user entering in non-integer input
+* No known bugs
+
 
 ## License
 
