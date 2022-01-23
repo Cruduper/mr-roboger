@@ -16,7 +16,6 @@ function robogerOutput(input)  {
       outputArr.unshift(input - i);
     }
   }
-
   outputArr.unshift(0);
   
   return outputArr;
@@ -29,14 +28,49 @@ function printOutput ( userNums ) {
   }
 }
 
+function armScale (scaler)  {
+  if (scaler > 1.2) {
+    return 1.2;
+  }
+  else  {
+    return scaler;
+  }
+}
+
 
 $(document).ready( function() {
-  $("div#formBox").submit( function()  {
+  
+  $("#speech").hide();
+  $("button#add-info").one( "click", function() {
+    $("body").addClass("gradientAnimation");
+  });
 
-    event.preventDefault(); 
+  $("div#formBox").submit( function()  {
+    
+    event.preventDefault();
+
     $("div#userResults").text("");
     const userNum =  $("input#userNum").val();
     const outputNums = robogerOutput(userNum);
     printOutput(outputNums);
+    
+    const startLength = 666;
+    const newArmLength = Math.sqrt( startLength**2 + (30 * (outputNums.length - 4))**2 );
+    const rotationAngleRad = (Math.atan((30 * (outputNums.length)) / startLength)) ;
+    const transformScaler = 0.66*newArmLength / (startLength / 0.75);
+    
+    const xScaler = armScale(transformScaler); 
+    const yScaler =  armScale(transformScaler); 
+
+    let rotater = 22 -1*( rotationAngleRad* (180 / Math.PI) );
+
+    $("img#front-arm").css( "transform", "scaleX("+ xScaler +") scaleY("+ yScaler +") rotate("+ rotater +"deg)" );
+     
+    $("p#speech").show();
+    $("p#speech").css("font-size", "+=16");
+    $("p#speech").css("width", "+=150");
+    $("p#speech").css("opacity", "-=10%");
+
+    $("#roboger").effect( "shake", {times: 5, distance: 2}, 190);
   });
 });

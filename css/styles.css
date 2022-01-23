@@ -1,4 +1,5 @@
 #formBox  {
+  display: inline-block;
   margin: 5%;
   width: 33%;
   min-width: 25%;
@@ -6,12 +7,95 @@
 }
 
 #userResults  {
-  margin: 5%;
+  margin-left: 5%;
   min-width: 33%;
   font-weight: 666;
-  color: #911;
+  font-size: 20px;
+  text-shadow: #fcc;
 }
+
+#roboger {
+  position: relative;
+  float: right;
+   margin: 2%; 
+  
+}
+
+#torso {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  transform: scale(.5);
+}
+
+#front-arm  {
+  position: absolute;
+  transform-origin: 766px 10px;
+  right: 96px;
+  top: 390px;
+  transform: scaleX(0.5) scaleY(0.5) rotate(0);
+  z-index: -1;
+}
+
+#everything {
+  width: 1080px;
+  margin: auto;
+}
+
+#speech {
+  position: absolute;
+  width: 150px;
+  font-family:cursive;
+  font-size: 4pt;
+  font-weight: 666;
+  font-style:oblique;
+  right: 190px;
+  top: 145px;
+  color: #fcc;
+  z-index: -3;
+}
+
+
+.gradientAnimation {
+  background: linear-gradient(240deg, #881, #F66);
+  background-size: 500% 500%;
+  animation: FlowGradient 5s ease infinite;
+}
+
+@keyframes FlowGradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 
 body  {
   background-color: #fcc;
+  width: 100%;
+  height: 100%;
+}
+
+.shook {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
